@@ -1,0 +1,4 @@
+type PageInfo {
+    startCursor: ID
+    endCursor: ID
+}

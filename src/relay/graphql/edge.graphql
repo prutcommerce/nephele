@@ -1,0 +1,4 @@
+interface Edge {
+    node: Node!
+    cursor: ID!
+}

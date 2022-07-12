@@ -11,8 +11,8 @@
     "install": "yarn build"
   },
   "bin": {
-    "pluto.create.migration": "bin/create-migration.js",
-    "pluto.create.seed": "bin/create-seed.js"
+    "nephele.create.migration": "bin/create-migration.js",
+    "nephele.create.seed": "bin/create-seed.js"
   },
   "dependencies": {
     "@swc/core": "1.2.179",

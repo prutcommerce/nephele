@@ -1,6 +1,6 @@
-export const safe = test => value => {
+export const safe = test => (value, context) => {
   try {
-    return test(value)
+    return test(value, context)
   } catch {
     return false
   }

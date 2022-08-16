@@ -1,5 +1,5 @@
 import { nephele } from 'src'
-import { express } from 'src/deps'
+import { express, cors } from 'src/deps'
 import { logging } from 'src/setup-rest/logging'
 
 const DEFAULT_CONFIGS = Object.freeze({
@@ -12,6 +12,7 @@ export const setupRest = (configs = DEFAULT_CONFIGS) => () => {
 
   server.use(logging.middleware())
   server.use(express.json())
+  server.use(cors())
 
   configs.routes.setup(server)
 

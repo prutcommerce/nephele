@@ -32,3 +32,8 @@ export { default as axiosOauthClient } from 'axios-oauth-client'
  * @type {import('axios-token-interceptor')}
  */
 export { default as axiosTokenInterceptor } from 'axios-token-interceptor'
+
+/**
+ * @type {import('cors')}
+ */
+export * as cors from 'cors'
